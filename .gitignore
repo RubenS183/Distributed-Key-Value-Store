@@ -1,0 +1,11 @@
+build/
+cmake-build-*/
+.cache/
+.DS_Store
+*.log
+*.db
+*.snap
+*.prof
+*.gcda
+*.gcno
+compile_commands.json

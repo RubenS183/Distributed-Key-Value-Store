@@ -1,0 +1,2 @@
+add_executable(kvstore_benchmarks benchmark_smoke.cpp)
+target_link_libraries(kvstore_benchmarks PRIVATE kvstore::core)

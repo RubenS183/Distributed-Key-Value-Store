@@ -1,0 +1,14 @@
+services:
+  kvstore:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "6379:6379"
+      - "9090:9090"
+    volumes:
+      - kvstore-data:/var/lib/kvstore
+    command: []
+
+volumes:
+  kvstore-data:

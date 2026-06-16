@@ -1,0 +1,19 @@
+server:
+  host: "0.0.0.0"
+  port: 6379
+
+storage:
+  persistence_dir: "/var/lib/kvstore"
+  snapshot_interval_seconds: 300
+
+replication:
+  role: "leader"
+  followers: []
+
+cache:
+  eviction_policy: "lru"
+  max_entries: 1000000
+
+observability:
+  metrics_port: 9090
+  log_level: "info"
